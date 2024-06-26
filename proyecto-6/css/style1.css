@@ -1,8 +1,19 @@
 /********** Template CSS **********/
 :root {
-    --primary: #009CFF;
+    --primary: #2D3192;
+    --primary-light: #595ee7;
     --light: #F3F6F9;
     --dark: #191C24;
+}
+
+.fa {
+    color: var(--primary);
+
+
+}
+
+.fa:hover {
+    color: var(--primary-light);
 }
 
 .back-to-top {
@@ -36,6 +47,13 @@
 
 .btn.btn-primary {
     color: #FFFFFF;
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn.btn-primary:hover {
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
 }
 
 .btn-square {
@@ -274,4 +292,8 @@
 .testimonial-carousel .owl-dot.active {
     background: var(--dark);
     border-color: var(--primary);
+}
+
+.text-primary {
+    color: var(--primary) !important;
 }

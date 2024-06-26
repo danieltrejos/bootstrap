@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DASHMIN - Bootstrap Admin Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="images/logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap1.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style1.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl position-relative bg-white d-flex p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Cargando...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!----------------------------------------------------------------- Sidebar Start -->
+
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar bg-light navbar-light">
+                <div class="nav-header d-flex flex-column align-items-center">
+                    <a href="dashboard.html" class="navbar-brand mb-3">
+                        <h4 class="text-primary">CRC EXPRES SALUD</h4>
+                    </a>
+                    <div class="d-flex flex-column align-items-center justify-content-center mb-2">
+                        <div>
+                            <img class="rounded-circle mb-2" src="images/user.jpg" alt=""
+                                style="width: 64px; height: 64px;">
+                        </div>
+                        <div class="ms-3">
+                            <h6 class="mb-0">Daniel Trejos</h6>
+                            <span>Super admin</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-nav w-100">
+
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                                class="bi bi-house-door-fill me-3"></i>Resumen</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="dashboard.html" class="dropdown-item">Tablero</a>
+                            <a href="#" class="dropdown-item">Cita</a>
+                            <a href="#" class="dropdown-item">Detalles de paciente</a>
+                            <a href="#" class="dropdown-item">Línea de tiempo</a>
+                            <a href="#" class="dropdown-item">Solicitudes</a>
+                            <a href="#" class="dropdown-item">Online y Offline</a>
+                            <a href="#" class="dropdown-item">Análisis</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <!-- <img src="images/medico.png" class="bg-white p-1 rounded-circle me-3"> -->
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> <i
+                                class="bi bi-person-badge-fill me-3"></i>Profesional</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="personal.html" class="dropdown-item">Registrar nuevo</a>
+                            <a href="#" class="dropdown-item">Médico</a>
+                            <a href="#" class="dropdown-item">Asistencial</a>
+                            <a href="#" class="dropdown-item">Administrativo</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                                class="bi bi-heart me-3"></i>Mis Pacientes</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="paciente.html" class="dropdown-item">Nuevo Paciente</a>
+                            <a href="#" class="dropdown-item">Historial de pacientes</a>
+                            <a href="#" class="dropdown-item">Detalles de pacientes</a>
+                            <a href="#" class="dropdown-item">Receta Medica</a>
+                            <a href="orden-medica.html" class="dropdown-item">Orden Medica</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                                class="bi bi-calendar2-plus me-3"></i>Programar Cita</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="cita-medica.html" class="dropdown-item">Nueva Cita</a>
+                            <a href="orden-medica.html" class="dropdown-item">Selección de fecha</a>
+                            <a href="orden-medica.html" class="dropdown-item">Solicitud de cita</a>
+                            <a class="dropdown-item" href="orden-medica.html">Paciente reciente</a>
+                            <a class="dropdown-item" href="orden-medica.html">Línea de tiempo de citas</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                                class="bi bi-chat-left-dots-fill me-3"></i>Mensajes</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="#" class="dropdown-item">Detalles del paciente</a>
+                            <a href="#" class="dropdown-item">Historial de mensajes</a>
+                            <a href="#" class="dropdown-item">Notificación</a>
+                            <a href="#" class="dropdown-item">Generar reporte</a>
+                            <a href="#" class="dropdown-item">Video y llamada de audio</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="signin.html" class="nav-link"><i class="bi bi-box-arrow-left me-3"
+                                style="font-size: 24px;"></i>Cerrar Sesión</a>
+
+                    </div>
+
+
+                </div>
+            </nav>
+        </div>
+        <!----------------------------------------------------------------- Sidebar Start - END-->
+
+
+        <!-- Content Start -->
+        <div class="content">
+
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
+                <a href="dashboard.html" class="navbar-brand d-flex d-lg-none me-4">
+                    <h2 class="text-primary mb-0"><img src="images/logo.png" width="64" alt=""></i></h2>
+                </a>
+                <a href="#" class="sidebar-toggler flex-shrink-0">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <form class="d-none d-md-flex ms-4">
+                    <input class="form-control border-0" type="search" placeholder="Buscar">
+                </form>
+                <div class="navbar-nav align-items-center ms-auto">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-envelope me-lg-2"></i>
+                            <span class="d-none d-lg-inline-flex">Mensajes</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="images/user.jpg" alt=""
+                                        style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">Jhon te envió un mensaje</h6>
+                                        <small>Hace 15 minutos</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="images/user.jpg" alt=""
+                                        style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">Jhon te envió un mensaje</h6>
+                                        <small>Hace 15 minutos</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="images/user.jpg" alt=""
+                                        style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">Jhon te envió un mensaje</h6>
+                                        <small>Hace 15 minutos</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item text-center">Ver todos los mensajes</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-bell me-lg-2"></i>
+                            <span class="d-none d-lg-inline-flex">Notificaciones</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">Perfil actualizado</h6>
+                                <small>Hace 15 minutos</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">Nuevo usuario añadido</h6>
+                                <small>Hace 15 minutos</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">Contraseña cambiada</h6>
+                                <small>Hace 15 minutos</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item text-center">Ver todas las notificaciones</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <img class="rounded-circle me-lg-2" src="images/user.jpg" alt=""
+                                style="width: 40px; height: 40px;">
+                            <span class="d-none d-lg-inline-flex">Daniel trejos</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">Mi perfil</a>
+                            <a href="#" class="dropdown-item">Configuraciones</a>
+                            <a href="#" class="dropdown-item">Cerrar Sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar End -->
+
+            <!---------------------------------------- Contenido principal -->
+
+            <!---------------------------------------- Contenido principal End -->
+
+
+            <!-- Footer Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-light rounded-top p-4">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 text-center text-sm-start">
+                            &copy; <a href="#">CRC EXPRES SALUD</a>, Todos los derechos reservados.
+                        </div>
+                        <div class="col-12 col-sm-6 text-center text-sm-end">
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Hecho por <a href="https://htmlcodex.com">©Daniel Trejos</a>
+                            </br>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+        </div>
+        <!-- Content End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/chart/chart.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main1.js"></script>
+</body>
+
+</html>
