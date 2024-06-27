@@ -334,26 +334,26 @@
 
 .bg-two {
     background-color: #d5d6e9;
-
+    /* 
     &:hover {
         background-color: #8183be;
-    }
+    } */
 }
 
 .bg-three {
     background-color: #d5d6e9;
-
+    /* 
     &:hover {
         background-color: #8183be;
-    }
+    } */
 }
 
 .bg-four {
     background-color: #d5d6e9;
 
-    &:hover {
+    /*     &:hover {
         background-color: #8183be;
-    }
+    } */
 }
 
 
