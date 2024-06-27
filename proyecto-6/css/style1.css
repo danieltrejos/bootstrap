@@ -12,6 +12,9 @@
 
 }
 
+
+
+
 .fa:hover {
     color: var(--primary-light);
 }
@@ -152,7 +155,7 @@
 .sidebar .navbar .navbar-nav .nav-link:hover,
 .sidebar .navbar .navbar-nav .nav-link.active {
     color: var(--primary);
-    background: #FFFFFF;
+    background: #abadd3;
     border-color: var(--primary);
 }
 
@@ -297,3 +300,75 @@
 .text-primary {
     color: var(--primary) !important;
 }
+
+.card-header {
+    background-color: #00163B;
+    color: #FFF;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.overview-card {
+    padding: 10px;
+    color: #fff;
+}
+
+.overview-card h5 {
+    font-size: 1.2rem;
+}
+
+.bg-one {
+    background-color: #d5d6e9;
+
+    &:hover {
+        background-color: #8183be;
+    }
+}
+
+.bg-two {
+    background-color: #d5d6e9;
+
+    &:hover {
+        background-color: #8183be;
+    }
+}
+
+.bg-three {
+    background-color: #d5d6e9;
+
+    &:hover {
+        background-color: #8183be;
+    }
+}
+
+.bg-four {
+    background-color: #d5d6e9;
+
+    &:hover {
+        background-color: #8183be;
+    }
+}
+
+
+/* 
+Blue: {
+    100: "#d5d6e9",
+    200: "#abadd3",
+    300: "#8183be",
+    400: "#575aa8",
+    500: "#2d3192",
+    600: "#242775",
+    700: "#1b1d58",
+    800: "#12143a",
+    900: "#090a1d"
+}
+
+,
+*/

@@ -32,7 +32,7 @@
 </head>
 
 <body>
-    <div class="container-xxl position-relative bg-white d-flex p-0">
+    <div class="container-fluid position-relative bg-white d-flex p-0">
         <!-- Spinner Start -->
         <div id="spinner"
             class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -49,7 +49,7 @@
             <nav class="navbar bg-light navbar-light">
                 <div class="nav-header d-flex flex-column align-items-center">
                     <a href="dashboard.html" class="navbar-brand mb-3">
-                        <h4 class="text-primary">CRC EXPRES SALUD</h4>
+                        <h4 class="text-primary mx-2">CRC EXPRES SALUD</h4>
                     </a>
                     <div class="d-flex flex-column align-items-center justify-content-center mb-2">
                         <div>
@@ -94,10 +94,10 @@
                                 class="bi bi-heart me-3"></i>Mis Pacientes</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="paciente.html" class="dropdown-item">Nuevo Paciente</a>
+                            <a href="orden-medica.html" class="dropdown-item">Orden Medica</a>
                             <a href="#" class="dropdown-item">Historial de pacientes</a>
                             <a href="#" class="dropdown-item">Detalles de pacientes</a>
                             <a href="#" class="dropdown-item">Receta Medica</a>
-                            <a href="orden-medica.html" class="dropdown-item">Orden Medica</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
@@ -105,10 +105,10 @@
                                 class="bi bi-calendar2-plus me-3"></i>Programar Cita</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="cita-medica.html" class="dropdown-item">Nueva Cita</a>
-                            <a href="orden-medica.html" class="dropdown-item">Selección de fecha</a>
-                            <a href="orden-medica.html" class="dropdown-item">Solicitud de cita</a>
-                            <a class="dropdown-item" href="orden-medica.html">Paciente reciente</a>
-                            <a class="dropdown-item" href="orden-medica.html">Línea de tiempo de citas</a>
+                            <a href="#" class="dropdown-item">Selección de fecha</a>
+                            <a href="#" class="dropdown-item">Solicitud de cita</a>
+                            <a class="dropdown-item" href="#">Paciente reciente</a>
+                            <a class="dropdown-item" href="#">Línea de tiempo de citas</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
@@ -299,13 +299,13 @@
                                                 </div>
                                                 <div class="col-md-6 form-floating mb-3">
                                                     <input type="text" class="form-control" id="numeroIdentificacion"
-                                                    placeholder="Número de identificación" required>
+                                                        placeholder="Número de identificación" required>
                                                     <label for="numeroIdentificacion" class="form-label ms-2">N° de
                                                         Identificación</label>
                                                 </div>
                                                 <div class="col-md-6 form-floating mb-3">
                                                     <input type="date" class="form-control" id="fechaNacimiento"
-                                                    required>
+                                                        required>
                                                     <label for="fechaNacimiento" class="form-label ms-2">Fecha de
                                                         Nacimiento</label>
                                                 </div>
@@ -336,12 +336,12 @@
                                                 </div>
                                                 <div class="col-md-6 form-floating mb-3">
                                                     <input type="number" class="form-control" id="estatura"
-                                                    placeholder="Estatura en centímetros" required>
+                                                        placeholder="Estatura en centímetros" required>
                                                     <label for="estatura" class="form-label ms-2">Estatura (cm)</label>
                                                 </div>
                                                 <div class="col-md-6 form-floating mb-3">
                                                     <input type="number" class="form-control" id="peso"
-                                                    placeholder="Peso en kilogramos" required>
+                                                        placeholder="Peso en kilogramos" required>
                                                     <label for="peso" class="form-label ms-2">Peso (kg)</label>
                                                 </div>
                                                 <!--Row end -->
@@ -358,17 +358,18 @@
                                             <div class="row">
                                                 <div class="col-md-6 form-floating mb-3">
                                                     <input type="tel" class="form-control" id="telefono"
-                                                    placeholder="Número de teléfono" required>
+                                                        placeholder="Número de teléfono" required>
                                                     <label for="telefono" class="form-label ms-2">Teléfono</label>
                                                 </div>
                                                 <div class="col-md-6 form-floating mb-3">
                                                     <input type="email" class="form-control" id="email"
-                                                    placeholder="Correo electrónico" required>
-                                                    <label for="email" class="form-label ms-2">Correo Electrónico</label>
+                                                        placeholder="Correo electrónico" required>
+                                                    <label for="email" class="form-label ms-2">Correo
+                                                        Electrónico</label>
                                                 </div>
                                                 <div class="col-md-6 form-floating mb-3">
                                                     <input type="text" class="form-control" id="direccion"
-                                                    placeholder="Dirección del paciente" required>
+                                                        placeholder="Dirección del paciente" required>
                                                     <label for="direccion" class="form-label ms-2">Dirección</label>
                                                 </div>
                                                 <div class="col-md-6 form-floating mb-3">
@@ -410,7 +411,8 @@
                                                         <option value="Vaupés">Vaupés</option>
                                                         <option value="Vichada">Vichada</option>
                                                     </select>
-                                                    <label for="departamento" class="form-label ms-2">Departamento</label>
+                                                    <label for="departamento"
+                                                        class="form-label ms-2">Departamento</label>
                                                 </div>
                                                 <div class="col-md-6 form-floating mb-3">
                                                     <select class="form-select" id="municipio" required>
@@ -421,8 +423,9 @@
                                                 </div>
                                                 <div class="col-md-6 form-floating mb-3">
                                                     <input type="text" class="form-control" id="codigoPostal"
-                                                    placeholder="Código postal" required>
-                                                    <label for="codigoPostal" class="form-label ms-2">Código Postal</label>
+                                                        placeholder="Código postal" required>
+                                                    <label for="codigoPostal" class="form-label ms-2">Código
+                                                        Postal</label>
                                                 </div>
                                                 <div class="col-md-6 form-floating mb-3">
                                                     <select class="form-select" id="entidadSalud" required>
@@ -442,39 +445,39 @@
                                                         <option value="Ecopetrol">Ecopetrol</option>
                                                         <option value="Servicio Occidental de Salud (SOS)">Servicio
                                                             Occidental de Salud (SOS)</option>
-                                                            <option value="Mutual Ser">Mutual Ser</option>
-                                                            <option value="Ambuq">Ambuq</option>
-                                                            <option value="Cafam">Cafam</option>
-                                                            <option value="Salud Vida">Salud Vida</option>
-                                                            <option value="Capital Salud">Capital Salud</option>
-                                                            <option value="Asmet Salud">Asmet Salud</option>
-                                                            <option value="Comfachocó">Comfachocó</option>
-                                                            <option value="Comfamiliar Huila">Comfamiliar Huila</option>
-                                                            <option value="Comfamiliar Nariño">Comfamiliar Nariño</option>
-                                                            <option value="Comfenalco Antioquia">Comfenalco Antioquia
-                                                            </option>
-                                                            <option value="Comfenalco Valle">Comfenalco Valle</option>
-                                                            <option value="Emssanar">Emssanar</option>
-                                                            <option value="Mallamas">Mallamas</option>
-                                                            <option value="Mutual Ser EPS">Mutual Ser EPS</option>
-                                                            <option value="Capresoca">Capresoca</option>
-                                                            <option value="Comparta">Comparta</option>
-                                                            <option value="Convida">Convida</option>
-                                                            <option value="Dusakawi">Dusakawi</option>
-                                                            <option value="Ecoopsos">Ecoopsos</option>
-                                                            <option value="Empresas Públicas de Medellín (EPM)">Empresas
-                                                                Públicas de Medellín (EPM)</option>
-                                                                <option value="EPS Sanitas">EPS Sanitas</option>
-                                                                <option value="Famisanar EPS">Famisanar EPS</option>
-                                                                <option value="Comfama">Comfama</option>
-                                                                <option value="Salud Total EPS">Salud Total EPS</option>
-                                                                <option value="Savia Salud">Savia Salud</option>
-                                                            </select>
-                                                            <label for="entidadSalud" class="form-label ms-2">Entidad de
-                                                                Salud</label>
-                                                            
-                                                        </div>
-                                                        
+                                                        <option value="Mutual Ser">Mutual Ser</option>
+                                                        <option value="Ambuq">Ambuq</option>
+                                                        <option value="Cafam">Cafam</option>
+                                                        <option value="Salud Vida">Salud Vida</option>
+                                                        <option value="Capital Salud">Capital Salud</option>
+                                                        <option value="Asmet Salud">Asmet Salud</option>
+                                                        <option value="Comfachocó">Comfachocó</option>
+                                                        <option value="Comfamiliar Huila">Comfamiliar Huila</option>
+                                                        <option value="Comfamiliar Nariño">Comfamiliar Nariño</option>
+                                                        <option value="Comfenalco Antioquia">Comfenalco Antioquia
+                                                        </option>
+                                                        <option value="Comfenalco Valle">Comfenalco Valle</option>
+                                                        <option value="Emssanar">Emssanar</option>
+                                                        <option value="Mallamas">Mallamas</option>
+                                                        <option value="Mutual Ser EPS">Mutual Ser EPS</option>
+                                                        <option value="Capresoca">Capresoca</option>
+                                                        <option value="Comparta">Comparta</option>
+                                                        <option value="Convida">Convida</option>
+                                                        <option value="Dusakawi">Dusakawi</option>
+                                                        <option value="Ecoopsos">Ecoopsos</option>
+                                                        <option value="Empresas Públicas de Medellín (EPM)">Empresas
+                                                            Públicas de Medellín (EPM)</option>
+                                                        <option value="EPS Sanitas">EPS Sanitas</option>
+                                                        <option value="Famisanar EPS">Famisanar EPS</option>
+                                                        <option value="Comfama">Comfama</option>
+                                                        <option value="Salud Total EPS">Salud Total EPS</option>
+                                                        <option value="Savia Salud">Savia Salud</option>
+                                                    </select>
+                                                    <label for="entidadSalud" class="form-label ms-2">Entidad de
+                                                        Salud</label>
+
+                                                </div>
+
                                             </div>
                                         </div>
 
@@ -484,32 +487,32 @@
                                         <div class="tab-pane fade form-section" id="pills-medica" role="tabpanel"
                                             aria-labelledby="pills-medica-tab">
 
-                                            <div class="form-floating mb-3">
-                                                
+                                            <div class=" mb-3">
+                                                <label for="antecedentes" class="form-label ">Antecedentes
+                                                </label>
+
                                                 <textarea class="form-control" id="antecedentes" rows="3"
                                                     placeholder="Describa los antecedentes médicos del paciente"></textarea>
-                                                    <label for="antecedentes" class="form-label ">Antecedentes
-                                                    Médicos: Describa los antecedentes médicos del paciente</label>
-                                                </div>
-                                                <div class="form-floating mb-3">
-                                                    <textarea class="form-control" id="alergias" rows="2"
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="alergias" class="form-label">Alergias: </label>
+                                                <textarea class="form-control" id="alergias" rows="2"
                                                     placeholder="Describa las alergias del paciente"></textarea>
-                                                    <label for="alergias" class="form-label">Alergias: Describa las alergias del paciente</label>
-                                                </div>
-                                                <div class="form-floating mb-3">
-                                                    <textarea class="form-control" id="medicamentos" rows="2"
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="medicamentos" class="form-label">Medicamentos
+                                                    Actuales:</label>
+                                                <textarea class="form-control" id="medicamentos" rows="2"
                                                     placeholder="Liste los medicamentos actuales que toma el paciente"></textarea>
-                                                    <label for="medicamentos" class="form-label">Medicamentos
-                                                        Actuales: Liste los medicamentos actuales que toma el paciente</label>
-                                                </div>
-                                                
+                                            </div>
+
                                         </div>
                                     </div>
 
 
 
 
-                                    <div class="text-center">
+                                    <div>
                                         <button type="submit" class="btn btn-primary">Registrar Paciente</button>
                                     </div>
                                 </form>

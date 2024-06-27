@@ -45,11 +45,11 @@
 
         <!----------------------------------------------------------------- Sidebar Start -->
 
-        <div class="sidebar pe-4 pb-3">
+        <div class="sidebar  pb-3">
             <nav class="navbar bg-light navbar-light">
-                <div class="nav-header d-flex flex-column align-items-center">
+                <div class="nav-header d-flex flex-column justify-content-center text-center">
                     <a href="dashboard.html" class="navbar-brand mb-3">
-                        <h4 class="text-primary">CRC EXPRES SALUD</h4>
+                        <h4 class="text-primary mx-2">CRC EXPRES SALUD</h4>
                     </a>
                     <div class="d-flex flex-column align-items-center justify-content-center mb-2">
                         <div>
@@ -81,7 +81,7 @@
                     <div class="nav-item dropdown">
                         <!-- <img src="images/medico.png" class="bg-white p-1 rounded-circle me-3"> -->
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> <i
-                                class="bi bi-person-badge-fill me-3"></i>Profesional</a>
+                                class="bi bi-person-badge-fill me-3"></i>Personal</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="personal.html" class="dropdown-item">Registrar nuevo</a>
                             <a href="#" class="dropdown-item">Médico</a>
@@ -94,10 +94,10 @@
                                 class="bi bi-heart me-3"></i>Mis Pacientes</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="paciente.html" class="dropdown-item">Nuevo Paciente</a>
+                            <a href="medicamentos.html" class="dropdown-item">Receta Medica</a>
+                            <a href="orden-medica.html" class="dropdown-item">Orden Medica</a>
                             <a href="#" class="dropdown-item">Historial de pacientes</a>
                             <a href="#" class="dropdown-item">Detalles de pacientes</a>
-                            <a href="#" class="dropdown-item">Receta Medica</a>
-                            <a href="orden-medica.html" class="dropdown-item">Orden Medica</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
@@ -105,10 +105,10 @@
                                 class="bi bi-calendar2-plus me-3"></i>Programar Cita</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="cita-medica.html" class="dropdown-item">Nueva Cita</a>
-                            <a href="orden-medica.html" class="dropdown-item">Selección de fecha</a>
-                            <a href="orden-medica.html" class="dropdown-item">Solicitud de cita</a>
-                            <a class="dropdown-item" href="orden-medica.html">Paciente reciente</a>
-                            <a class="dropdown-item" href="orden-medica.html">Línea de tiempo de citas</a>
+                            <a href="#" class="dropdown-item">Selección de fecha</a>
+                            <a href="#" class="dropdown-item">Solicitud de cita</a>
+                            <a class="dropdown-item" href="#">Paciente reciente</a>
+                            <a class="dropdown-item" href="#">Línea de tiempo de citas</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
@@ -222,9 +222,9 @@
                             <span class="d-none d-lg-inline-flex">Daniel trejos</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">Mi perfil</a>
-                            <a href="#" class="dropdown-item">Configuraciones</a>
-                            <a href="#" class="dropdown-item">Cerrar Sesión</a>
+                            <a href="personal.html" class="dropdown-item">Personal</a>
+                            <a href="dashboard.html" class="dropdown-item">Configuraciones</a>
+                            <a href="signin.html" class="dropdown-item">Cerrar Sesión</a>
                         </div>
                     </div>
                 </div>
@@ -233,6 +233,7 @@
 
 
             <!-- Sale & Revenue Start -->
+            <!-- 
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
                     <div class="col-sm-6 col-xl-3">
@@ -273,8 +274,124 @@
                     </div>
                 </div>
             </div>
+-->
             <!-- Sale & Revenue End -->
 
+            <!-- Cards  -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="row g-3 mt-3">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-one overview-card border-0">
+                            <div class="card-body text-center">
+                                <div><img src="images/icon-1.svg" alt="" width="64px"></div>
+                                <h5>Citas de Hoy</h5>
+                                <h1>22</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-two overview-card border-0">
+                            <div class="card-body text-center">
+                                <div><img src="images/icon-2.svg" alt="" width="64px"></div>
+                                <h5>Urgencias de hoy</h5>
+                                <h1>10</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-three overview-card border-0">
+                            <div class="card-body text-center">
+                                <div><img src="images/icon-3.svg" alt="" width="64px"></div>
+                                <h5>Pacientes</h5>
+                                <h1>18</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-four overview-card border-0">
+                            <div class="card-body text-center">
+                                <div><img src="images/icon-4.svg" alt="" width="64px"></div>
+                                <h5>Activos</h5>
+                                <h1>37</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cards End -->
+
+            <!-- Recent Sales Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-light text-center rounded p-4">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <h6 class="mb-0">Alta de pacientes</h6>
+                        <a href="" style="color: #575aa8;">Mostrar todo</a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table text-start align-middle table-bordered table-hover mb-0">
+                            <thead>
+                                <tr class="text-dark">
+                                    <th scope="col"><input class="form-check-input" type="checkbox"></th>
+                                    <th scope="col">Fecha</th>
+                                    <th scope="col">Codigo</th>
+                                    <th scope="col">Paciente</th>
+                                    <th scope="col">Facturación</th>
+                                    <th scope="col">Estado</th>
+                                    <th scope="col">Acción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input class="form-check-input" type="checkbox"></td>
+                                    <td>24 junio 2024</td>
+                                    <td>INV-0123</td>
+                                    <td>Helena de Troya</td>
+                                    <td>$654.123</td>
+                                    <td>En cobro</td>
+                                    <td><a class="btn btn-sm btn-primary" href="">Detalles</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="form-check-input" type="checkbox"></td>
+                                    <td>22 junio 2024</td>
+                                    <td>INV-0122</td>
+                                    <td>Yaper Diste</td>
+                                    <td>$340.123</td>
+                                    <td>Pagado</td>
+                                    <td><a class="btn btn-sm btn-primary" href="">Detalles</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="form-check-input" type="checkbox"></td>
+                                    <td>22 junio 2024</td>
+                                    <td>INV-0121</td>
+                                    <td>Roberto Roena</td>
+                                    <td>$230.123</td>
+                                    <td>Cobro a EPS</td>
+                                    <td><a class="btn btn-sm btn-primary" href="">Detalles</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="form-check-input" type="checkbox"></td>
+                                    <td>20 junio 2024</td>
+                                    <td>INV-0120</td>
+                                    <td>Manuel Díaz</td>
+                                    <td>$750.123</td>
+                                    <td>Pagado</td>
+                                    <td><a class="btn btn-sm btn-primary" href="">Detalles</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="form-check-input" type="checkbox"></td>
+                                    <td>20 junio 2024</td>
+                                    <td>INV-0119</td>
+                                    <td>Pablo Perez</td>
+                                    <td>$856.123</td>
+                                    <td>Pagado</td>
+                                    <td><a class="btn btn-sm btn-primary" href="">Detalles</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Recent Sales End -->
 
             <!-- Sales Chart Start -->
             <div class="container-fluid pt-4 px-4">
@@ -282,8 +399,8 @@
                     <div class="col-sm-12 col-xl-6">
                         <div class="bg-light text-center rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Worldwide Sales</h6>
-                                <a href="">Show All</a>
+                                <h6 class="mb-0">Facturación anual por servicios(Millones)</h6>
+                                <a href="" style="color: #575aa8;">Mostrar todo</a>
                             </div>
                             <canvas id="worldwide-sales"></canvas>
                         </div>
@@ -291,8 +408,8 @@
                     <div class="col-sm-12 col-xl-6">
                         <div class="bg-light text-center rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Salse & Revenue</h6>
-                                <a href="">Show All</a>
+                                <h6 class="mb-0">Atención en urgencias y consulta general</h6>
+                                <a href="" style="color: #575aa8;">Mostrar todo</a>
                             </div>
                             <canvas id="salse-revenue"></canvas>
                         </div>
@@ -302,78 +419,8 @@
             <!-- Sales Chart End -->
 
 
-            <!-- Recent Sales Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="bg-light text-center rounded p-4">
-                    <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h6 class="mb-0">Recent Salse</h6>
-                        <a href="">Show All</a>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table text-start align-middle table-bordered table-hover mb-0">
-                            <thead>
-                                <tr class="text-dark">
-                                    <th scope="col"><input class="form-check-input" type="checkbox"></th>
-                                    <th scope="col">Date</th>
-                                    <th scope="col">Invoice</th>
-                                    <th scope="col">Customer</th>
-                                    <th scope="col">Amount</th>
-                                    <th scope="col">Status</th>
-                                    <th scope="col">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <!-- Recent Sales End -->
+
+
 
 
             <!-- Widgets Start -->
@@ -382,18 +429,18 @@
                     <div class="col-sm-12 col-md-6 col-xl-4">
                         <div class="h-100 bg-light rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-2">
-                                <h6 class="mb-0">Messages</h6>
-                                <a href="">Show All</a>
+                                <h6 class="mb-0">Mensajes</h6>
+                                <a href="" style="color: #575aa8;">Mostrar todo</a>
                             </div>
                             <div class="d-flex align-items-center border-bottom py-3">
                                 <img class="rounded-circle flex-shrink-0" src="images/user.jpg" alt=""
                                     style="width: 40px; height: 40px;">
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Jhon Doe</h6>
-                                        <small>15 minutes ago</small>
+                                        <h6 class="mb-0">Daniel Trejos</h6>
+                                        <small>Hace 15 minutos</small>
                                     </div>
-                                    <span>Short message goes here...</span>
+                                    <span>Cambiar colores...</span>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center border-bottom py-3">
@@ -401,10 +448,10 @@
                                     style="width: 40px; height: 40px;">
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Jhon Doe</h6>
-                                        <small>15 minutes ago</small>
+                                        <h6 class="mb-0">Daniel Trejos</h6>
+                                        <small>Hace 15 minutos</small>
                                     </div>
-                                    <span>Short message goes here...</span>
+                                    <span>Modificar el dashboard...</span>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center border-bottom py-3">
@@ -412,10 +459,10 @@
                                     style="width: 40px; height: 40px;">
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Jhon Doe</h6>
-                                        <small>15 minutes ago</small>
+                                        <h6 class="mb-0">Daniel Trejos</h6>
+                                        <small>Hace 15 minutos</small>
                                     </div>
-                                    <span>Short message goes here...</span>
+                                    <span>Programar resultados de examenes...</span>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center pt-3">
@@ -423,10 +470,10 @@
                                     style="width: 40px; height: 40px;">
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Jhon Doe</h6>
-                                        <small>15 minutes ago</small>
+                                        <h6 class="mb-0">Daniel Trejos</h6>
+                                        <small>Hace 15 minutos</small>
                                     </div>
-                                    <span>Short message goes here...</span>
+                                    <span>Modificar módulo Programar cita...</span>
                                 </div>
                             </div>
                         </div>
@@ -434,17 +481,56 @@
                     <div class="col-sm-12 col-md-6 col-xl-4">
                         <div class="h-100 bg-light rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Calender</h6>
-                                <a href="">Show All</a>
+                                <h6 class="mb-0">Calendario de Auditorias</h6>
+                                <a href="" style="color: #575aa8;">Mostrar todo</a>
                             </div>
                             <div id="calender"></div>
                         </div>
                     </div>
+
+                    <!-- Tabla con hover -->
                     <div class="col-sm-12 col-md-6 col-xl-4">
+                        <div class="bg-light rounded h-100 p-4">
+                            <h6 class="mb-4">Jefes de Área en turno</h6>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Extensión</th>
+                                        <th scope="col">Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Juan Duarte</td>
+                                        <td>3001125156</td>
+                                        <td>juanduarte@email.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Marcos Soto</td>
+                                        <td>3065166451</td>
+                                        <td>marcossoto@email.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Jacobo Torres</td>
+                                        <td>3022231563</td>
+                                        <td>jacobotorres@email.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <!--     <div class="col-sm-12 col-md-6 col-xl-4">
                         <div class="h-100 bg-light rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <h6 class="mb-0">To Do List</h6>
-                                <a href="">Show All</a>
+                                <a href="" style="color: #575aa8;">Mostrar todo</a>
                             </div>
                             <div class="d-flex mb-2">
                                 <input class="form-control bg-transparent" type="text" placeholder="Enter task">
@@ -496,7 +582,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <!-- Widgets End -->

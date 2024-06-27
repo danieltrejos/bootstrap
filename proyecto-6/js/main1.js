@@ -64,21 +64,21 @@
     var myChart1 = new Chart(ctx1, {
         type: "bar",
         data: {
-            labels: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"],
+            labels: ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
             datasets: [{
-                    label: "USA",
+                    label: "Urgencias",
                     data: [15, 30, 55, 65, 60, 80, 95],
-                    backgroundColor: "rgba(0, 156, 255, .7)"
+                    backgroundColor: "#abadd3"
                 },
                 {
-                    label: "UK",
+                    label: "Hospitalización",
                     data: [8, 35, 40, 60, 70, 55, 75],
-                    backgroundColor: "rgba(0, 156, 255, .5)"
+                    backgroundColor: "#575aa8"
                 },
                 {
-                    label: "AU",
+                    label: "Cirugia",
                     data: [12, 25, 45, 55, 65, 70, 60],
-                    backgroundColor: "rgba(0, 156, 255, .3)"
+                    backgroundColor: "#2d3192"
                 }
             ]
             },
@@ -93,17 +93,17 @@
     var myChart2 = new Chart(ctx2, {
         type: "line",
         data: {
-            labels: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"],
+            labels: ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
             datasets: [{
-                    label: "Salse",
-                    data: [15, 30, 55, 45, 70, 65, 85],
-                    backgroundColor: "rgba(0, 156, 255, .5)",
+                    label: "Consulta genreal",
+                    data: [1500, 3000, 5500, 4500, 7000, 6500, 8500],
+                    backgroundColor: "#2d3192",
                     fill: true
                 },
                 {
-                    label: "Revenue",
-                    data: [99, 135, 170, 130, 190, 180, 270],
-                    backgroundColor: "rgba(0, 156, 255, .3)",
+                    label: "Urgencias",
+                    data: [9900, 13500, 17000, 13000, 19000, 18000, 27000],
+                    backgroundColor: "#8183be",
                     fill: true
                 }
             ]
@@ -204,4 +204,5 @@
 
     
 })(jQuery);
+
 
