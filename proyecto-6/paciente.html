@@ -56,7 +56,7 @@
                             <img class="rounded-circle mb-2" src="images/user.jpg" alt=""
                                 style="width: 64px; height: 64px;">
                         </div>
-                        <div class="ms-3">
+                        <div class="ms-2">
                             <h6 class="mb-0">Daniel Trejos</h6>
                             <span>Super admin</span>
                         </div>
@@ -240,165 +240,282 @@
                     <!-------------------------------------------- Floating Label -->
                     <div class="">
                         <div class="bg-light rounded h-100 p-4">
-                            <form action="" class="row">
-
+                            <!-- Formulario -->
+                            <div class="row">
                                 <div class="col-sm-12 col-md-6 ">
-                                    <h3 class="mb-4">Nuevo Personal Medico</h3>
+                                    <h3 class="mb-4 text-center">Registro de Nuevo Paciente</h3>
                                 </div>
                                 <div class="form-floating col-md-6 mb-3">
                                     <input type="date" class="form-control text-end" id="date">
                                     <label for="date" class="ms-2">Fecha de ingreso</label>
                                 </div>
-                                <div class="col-md-6 form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="Nombre">
-                                    <label for="floatingInput" class="ms-2">Primer nombre*</label>
-                                </div>
-                                <div class="col-md-6 form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput" class="ms-2">Segundo nombre*</label>
-                                </div>
-                                <div class="col-md-6 form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput" class="ms-2">Primer apellido*</label>
-                                </div>
-                                <div class="col-md-6 form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput" class="ms-2">Segundo apellido*</label>
-                                </div>
+                            </div>
 
-                                <div class="form-floating mb-3 col-md-6">
-                                    <select class="form-select" id="floatingSelect"
-                                        aria-label="Floating label select example">
-                                        <option selected>-Seleccionar-</option>
-                                        <option value="CC">Cédula de Ciudadanía</option>
-                                        <option value="TI">Tarjeta de Identidad</option>
-                                        <option value="CE">Cédula de Extranjería</option>
-                                        <option value="PA">Pasaporte</option>
-                                    </select>
-                                    <label for="floatingSelect" class="ms-2">Tipo de documento</label>
-                                </div>
+                            <div class="card card-custom border-0 p-3">
+                                <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-personal-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-personal" type="button" role="tab"
+                                            aria-controls="pills-personal" aria-selected="true">Personal</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-contacto-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contacto" type="button" role="tab"
+                                            aria-controls="pills-contacto" aria-selected="false">Contacto</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-medica-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-medica" type="button" role="tab"
+                                            aria-controls="pills-medica" aria-selected="false">Médica</button>
+                                    </li>
+                                </ul>
+                                <form class="row">
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <!-- Información Personal -->
+                                        <div class="tab-pane fade show active form-section" id="pills-personal"
+                                            role="tabpanel" aria-labelledby="pills-personal-tab">
+                                            <div class="row">
+                                                <div class="col-md-6 form-floating mb-3">
+                                                    <input type="text" class="form-control" id="floatingInput"
+                                                        placeholder="Nombre">
+                                                    <label for="nombre" class="form-label ms-2">Nombre</label>
+                                                </div>
+                                                <div class="col-md-6 form-floating mb-3">
+                                                    <input type="text" class="form-control" id="apellido"
+                                                        placeholder="Apellido del paciente" required>
+                                                    <label for="apellido" class="form-label ms-2">Apellido</label>
+                                                </div>
+                                                <div class="col-md-6 form-floating mb-3">
+                                                    <select class="form-select" id="tipoDocumento" required>
+                                                        <option value="" disabled selected>Seleccione el tipo de
+                                                            documento
+                                                        </option>
+                                                        <option value="CC">Cédula de Ciudadanía</option>
+                                                        <option value="TI">Tarjeta de Identidad</option>
+                                                        <option value="CE">Cédula de Extranjería</option>
+                                                        <option value="PAS">Pasaporte</option>
+                                                    </select>
+                                                    <label for="tipoDocumento" class="ms-2">Tipo de Documento</label>
+                                                </div>
+                                                <div class="col-md-6 form-floating mb-3">
+                                                    <input type="text" class="form-control" id="numeroIdentificacion"
+                                                    placeholder="Número de identificación" required>
+                                                    <label for="numeroIdentificacion" class="form-label ms-2">N° de
+                                                        Identificación</label>
+                                                </div>
+                                                <div class="col-md-6 form-floating mb-3">
+                                                    <input type="date" class="form-control" id="fechaNacimiento"
+                                                    required>
+                                                    <label for="fechaNacimiento" class="form-label ms-2">Fecha de
+                                                        Nacimiento</label>
+                                                </div>
+                                                <div class="col-md-6 form-floating mb-3">
+                                                    <select class="form-select" id="genero" required>
+                                                        <option value="" disabled selected>Seleccione el género</option>
+                                                        <option value="masculino">Masculino</option>
+                                                        <option value="femenino">Femenino</option>
+                                                        <option value="otro">Otro</option>
+                                                    </select>
+                                                    <label for="genero" class="form-label ms-2">Género</label>
+                                                </div>
+                                                <div class="col-md-6 form-floating mb-3">
+                                                    <select class="form-select" id="grupoSanguineo" required>
+                                                        <option value="" disabled selected>Seleccione el grupo sanguíneo
+                                                        </option>
+                                                        <option value="A+">A+</option>
+                                                        <option value="A-">A-</option>
+                                                        <option value="B+">B+</option>
+                                                        <option value="B-">B-</option>
+                                                        <option value="AB+">AB+</option>
+                                                        <option value="AB-">AB-</option>
+                                                        <option value="O+">O+</option>
+                                                        <option value="O-">O-</option>
+                                                    </select>
+                                                    <label for="grupoSanguineo" class="form-label ms-2">Grupo
+                                                        Sanguíneo</label>
+                                                </div>
+                                                <div class="col-md-6 form-floating mb-3">
+                                                    <input type="number" class="form-control" id="estatura"
+                                                    placeholder="Estatura en centímetros" required>
+                                                    <label for="estatura" class="form-label ms-2">Estatura (cm)</label>
+                                                </div>
+                                                <div class="col-md-6 form-floating mb-3">
+                                                    <input type="number" class="form-control" id="peso"
+                                                    placeholder="Peso en kilogramos" required>
+                                                    <label for="peso" class="form-label ms-2">Peso (kg)</label>
+                                                </div>
+                                                <!--Row end -->
+                                            </div>
 
-                                <div class="col-md-6 form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput" class="ms-2">Número de documento*</label>
-                                </div>
-                                <div class="col-md-6 form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput" class="ms-2">Número de de Registro Médico*</label>
-                                </div>
+                                        </div>
 
-                                <div class="form-floating mb-3 col-md-6">
-                                    <select class="form-select" id="floatingSelect"
-                                        aria-label="Floating label select example">
-                                        <option selected>-Seleccionar-</option>
-                                        <option value="Cardiología">Cardiología</option>
-                                        <option value="Dermatología">Dermatología</option>
-                                        <option value="Ginecología">Ginecología</option>
-                                        <option value="Pediatría">Pediatría</option>
-                                        <option value="Psiquiatría">Psiquiatría</option>
-                                        <option value="Oftalmología">Oftalmología</option>
-                                        <option value="Neurología">Neurología</option>
-                                        <option value="Traumatología">Traumatología</option>
-                                    </select>
-                                    <label for="floatingSelect" class="ms-2">Especialidad</label>
-                                </div>
 
-                                <div class="form-floating mb-3 col-md-6">
-                                    <select class="form-select" id="floatingSelect"
-                                        aria-label="Floating label select example">
-                                        <option selected>-Seleccionar-</option>
-                                        <option value="Antioquia">Antioquia</option>
-                                        <option value="Bogotá">Bogotá</option>
-                                        <option value="Cundinamarca">Cundinamarca</option>
-                                        <option value="Sucre">Municipio</option>
-                                    </select>
-                                    <label for="floatingSelect" class="ms-2">Departamento donde reside</label>
-                                </div>
+                                        <!-- Información de Contacto -->
 
-                                <div class="col-md-6 form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput" class="ms-2">Dirección donde reside*</label>
-                                </div>
-                                <div class="col-md-6 form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput" class="ms-2">Teléfono*</label>
-                                </div>
-                                <div class="col-md-6 form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput" class="ms-2">Celular*</label>
-                                </div>
-                                <div class="col-md-6 form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput" class="ms-2">Correo Electrónico*</label>
-                                </div>
-                                <div class="col-md-6 form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput" class="ms-2">Confirmar Correo Electrónico*</label>
-                                </div>
 
-                                <div class="form-floating mb-3 col-md-6">
-                                    <select class="form-select" id="floatingSelect"
-                                        aria-label="Floating label select example">
-                                        <option selected>-Seleccionar-</option>
-                                        <option value="Masculino">Masculino</option>
-                                        <option value="Femenino">Femenino</option>
-                                        <option value="Otro">Otro</option>
-                                    </select>
-                                    <label for="floatingSelect" class="ms-2">Sexo*</label>
-                                </div>
+                                        <div class="tab-pane fade form-section" id="pills-contacto" role="tabpanel"
+                                            aria-labelledby="pills-contacto-tab">
+                                            <div class="row">
+                                                <div class="col-md-6 form-floating mb-3">
+                                                    <input type="tel" class="form-control" id="telefono"
+                                                    placeholder="Número de teléfono" required>
+                                                    <label for="telefono" class="form-label ms-2">Teléfono</label>
+                                                </div>
+                                                <div class="col-md-6 form-floating mb-3">
+                                                    <input type="email" class="form-control" id="email"
+                                                    placeholder="Correo electrónico" required>
+                                                    <label for="email" class="form-label ms-2">Correo Electrónico</label>
+                                                </div>
+                                                <div class="col-md-6 form-floating mb-3">
+                                                    <input type="text" class="form-control" id="direccion"
+                                                    placeholder="Dirección del paciente" required>
+                                                    <label for="direccion" class="form-label ms-2">Dirección</label>
+                                                </div>
+                                                <div class="col-md-6 form-floating mb-3">
+                                                    <select class="form-select" id="departamento" required>
+                                                        <option value="" disabled selected>Seleccione el departamento
+                                                        </option>
+                                                        <option value="Amazonas">Amazonas</option>
+                                                        <option value="Antioquia">Antioquia</option>
+                                                        <option value="Arauca">Arauca</option>
+                                                        <option value="Atlántico">Atlántico</option>
+                                                        <option value="Bolívar">Bolívar</option>
+                                                        <option value="Boyacá">Boyacá</option>
+                                                        <option value="Caldas">Caldas</option>
+                                                        <option value="Caquetá">Caquetá</option>
+                                                        <option value="Casanare">Casanare</option>
+                                                        <option value="Cauca">Cauca</option>
+                                                        <option value="Cesar">Cesar</option>
+                                                        <option value="Chocó">Chocó</option>
+                                                        <option value="Córdoba">Córdoba</option>
+                                                        <option value="Cundinamarca">Cundinamarca</option>
+                                                        <option value="Guainía">Guainía</option>
+                                                        <option value="Guaviare">Guaviare</option>
+                                                        <option value="Huila">Huila</option>
+                                                        <option value="La Guajira">La Guajira</option>
+                                                        <option value="Magdalena">Magdalena</option>
+                                                        <option value="Meta">Meta</option>
+                                                        <option value="Nariño">Nariño</option>
+                                                        <option value="Norte de Santander">Norte de Santander</option>
+                                                        <option value="Putumayo">Putumayo</option>
+                                                        <option value="Quindío">Quindío</option>
+                                                        <option value="Risaralda">Risaralda</option>
+                                                        <option value="San Andrés y Providencia">San Andrés y
+                                                            Providencia
+                                                        </option>
+                                                        <option value="Santander">Santander</option>
+                                                        <option value="Sucre">Sucre</option>
+                                                        <option value="Tolima">Tolima</option>
+                                                        <option value="Valle del Cauca">Valle del Cauca</option>
+                                                        <option value="Vaupés">Vaupés</option>
+                                                        <option value="Vichada">Vichada</option>
+                                                    </select>
+                                                    <label for="departamento" class="form-label ms-2">Departamento</label>
+                                                </div>
+                                                <div class="col-md-6 form-floating mb-3">
+                                                    <select class="form-select" id="municipio" required>
+                                                        <option value="" disabled selected>Seleccione el municipio
+                                                        </option>
+                                                    </select>
+                                                    <label for="municipio" class="form-label ms-2">Municipio</label>
+                                                </div>
+                                                <div class="col-md-6 form-floating mb-3">
+                                                    <input type="text" class="form-control" id="codigoPostal"
+                                                    placeholder="Código postal" required>
+                                                    <label for="codigoPostal" class="form-label ms-2">Código Postal</label>
+                                                </div>
+                                                <div class="col-md-6 form-floating mb-3">
+                                                    <select class="form-select" id="entidadSalud" required>
+                                                        <option value="" disabled selected>Seleccione la entidad de
+                                                            salud
+                                                        </option>
+                                                        <option value="Sanitas">Sanitas</option>
+                                                        <option value="Sura">Sura</option>
+                                                        <option value="Compensar">Compensar</option>
+                                                        <option value="Nueva EPS">Nueva EPS</option>
+                                                        <option value="Coomeva">Coomeva</option>
+                                                        <option value="Salud Total">Salud Total</option>
+                                                        <option value="Famisanar">Famisanar</option>
+                                                        <option value="Cafesalud">Cafesalud</option>
+                                                        <option value="Medimás">Medimás</option>
+                                                        <option value="Aliansalud">Aliansalud</option>
+                                                        <option value="Ecopetrol">Ecopetrol</option>
+                                                        <option value="Servicio Occidental de Salud (SOS)">Servicio
+                                                            Occidental de Salud (SOS)</option>
+                                                            <option value="Mutual Ser">Mutual Ser</option>
+                                                            <option value="Ambuq">Ambuq</option>
+                                                            <option value="Cafam">Cafam</option>
+                                                            <option value="Salud Vida">Salud Vida</option>
+                                                            <option value="Capital Salud">Capital Salud</option>
+                                                            <option value="Asmet Salud">Asmet Salud</option>
+                                                            <option value="Comfachocó">Comfachocó</option>
+                                                            <option value="Comfamiliar Huila">Comfamiliar Huila</option>
+                                                            <option value="Comfamiliar Nariño">Comfamiliar Nariño</option>
+                                                            <option value="Comfenalco Antioquia">Comfenalco Antioquia
+                                                            </option>
+                                                            <option value="Comfenalco Valle">Comfenalco Valle</option>
+                                                            <option value="Emssanar">Emssanar</option>
+                                                            <option value="Mallamas">Mallamas</option>
+                                                            <option value="Mutual Ser EPS">Mutual Ser EPS</option>
+                                                            <option value="Capresoca">Capresoca</option>
+                                                            <option value="Comparta">Comparta</option>
+                                                            <option value="Convida">Convida</option>
+                                                            <option value="Dusakawi">Dusakawi</option>
+                                                            <option value="Ecoopsos">Ecoopsos</option>
+                                                            <option value="Empresas Públicas de Medellín (EPM)">Empresas
+                                                                Públicas de Medellín (EPM)</option>
+                                                                <option value="EPS Sanitas">EPS Sanitas</option>
+                                                                <option value="Famisanar EPS">Famisanar EPS</option>
+                                                                <option value="Comfama">Comfama</option>
+                                                                <option value="Salud Total EPS">Salud Total EPS</option>
+                                                                <option value="Savia Salud">Savia Salud</option>
+                                                            </select>
+                                                            <label for="entidadSalud" class="form-label ms-2">Entidad de
+                                                                Salud</label>
+                                                            
+                                                        </div>
+                                                        
+                                            </div>
+                                        </div>
 
-                                <div class="form-floating mb-3 col-md-6">
-                                    <select class="form-select" id="floatingSelect"
-                                        aria-label="Floating label select example">
-                                        <option selected>-Seleccionar-</option>
-                                        <option value="A+">A+</option>
-                                        <option value="A-">A-</option>
-                                        <option value="B+">B+</option>
-                                        <option value="B-">B-</option>
-                                        <option value="AB+">AB+</option>
-                                        <option value="AB-">AB-</option>
-                                        <option value="O+">O+</option>
-                                        <option value="O-">O-</option>
-                                    </select>
-                                    <label for="floatingSelect" class="ms-2">Grupo Sanguíneo*</label>
-                                </div>
 
-                                <div class="col-md-12 mb-3">
 
-                                    <label for="documento-identidad" class="form-label">Adjuntar documento de
-                                        identidad*</label>
-                                    <input class="form-control" type="file" id="documento-identidad"
-                                        accept=".txt,.rtf,.pdf,.doc,.docx,.odt,.ppt,.pptx,.odp,.xls,.xlsx,.ods,.jpg">
-                                    <div class="form-text">
-                                        Máximo 1 fichero, límite de 25 MB, tipos permitidos: txt, rtf, pdf, doc, docx,
-                                        odt,
-                                        ppt, pptx, odp, xls, xlsx, ods, jpg.
+                                        <!-- Información Médica -->
+                                        <div class="tab-pane fade form-section" id="pills-medica" role="tabpanel"
+                                            aria-labelledby="pills-medica-tab">
+
+                                            <div class="form-floating mb-3">
+                                                
+                                                <textarea class="form-control" id="antecedentes" rows="3"
+                                                    placeholder="Describa los antecedentes médicos del paciente"></textarea>
+                                                    <label for="antecedentes" class="form-label ">Antecedentes
+                                                    Médicos: Describa los antecedentes médicos del paciente</label>
+                                                </div>
+                                                <div class="form-floating mb-3">
+                                                    <textarea class="form-control" id="alergias" rows="2"
+                                                    placeholder="Describa las alergias del paciente"></textarea>
+                                                    <label for="alergias" class="form-label">Alergias: Describa las alergias del paciente</label>
+                                                </div>
+                                                <div class="form-floating mb-3">
+                                                    <textarea class="form-control" id="medicamentos" rows="2"
+                                                    placeholder="Liste los medicamentos actuales que toma el paciente"></textarea>
+                                                    <label for="medicamentos" class="form-label">Medicamentos
+                                                        Actuales: Liste los medicamentos actuales que toma el paciente</label>
+                                                </div>
+                                                
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a comment here"
-                                        id="floatingTextarea" style="height: 150px;"></textarea>
-                                    <label for="floatingTextarea" class="ms-2">Comments</label>
-                                </div>
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="autorizacion-datos" required="">
-                                    <label class="form-check-label" for="autorizacion-datos">Acepto el tratamiento y la
-                                        Política de Protección de Datos
-                                        Personales Servicios</label>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Registrar</button>
-                            </form>
+
+
+
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary">Registrar Paciente</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- Formulario End -->
+
 
                         </div>
                     </div>
