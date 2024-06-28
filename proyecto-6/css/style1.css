@@ -357,6 +357,33 @@
 }
 
 
+.card-sign {
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card-img-left {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.volver:hover{
+    color: #595ee7;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #2D3192;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #2D3192;
+    transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out;
+}
 /* 
 Blue: {
     100: "#d5d6e9",

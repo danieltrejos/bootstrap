@@ -32,7 +32,7 @@
 </head>
 
 <body>
-    <div class="container-xxl position-relative bg-white d-flex p-0">
+    <div class="container-fluid position-relative bg-white d-flex p-0">
         <!-- Spinner Start -->
         <div id="spinner"
             class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -95,9 +95,9 @@
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="paciente.html" class="dropdown-item">Nuevo Paciente</a>
                             <a href="orden-medica.html" class="dropdown-item">Orden Medica</a>
+                            <a href="medicamentos.html" class="dropdown-item">Receta Medica</a>
                             <a href="#" class="dropdown-item">Historial de pacientes</a>
                             <a href="#" class="dropdown-item">Detalles de pacientes</a>
-                            <a href="#" class="dropdown-item">Receta Medica</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
@@ -234,7 +234,7 @@
 
             <!---------------------------------------- Contenido principal -->
             <!-- Form Start -->
-            <div class="container-fluid pt-4 px-4">
+            <div class="container pt-4 px-4">
                 <div class="row g-4">
 
                     <!-------------------------------------------- Floating Label -->
@@ -243,161 +243,123 @@
                             <form action="" class="row">
 
                                 <div class="col-sm-12 col-md-6 ">
-                                    <h3 class="mb-4">Nuevo Personal Medico</h3>
+                                    <h3 class="mb-2 text-center">Nueva Receta Médica</h3>
+
                                 </div>
                                 <div class="form-floating col-md-6 mb-3">
                                     <input type="date" class="form-control text-end" id="date">
-                                    <label for="date" class="ms-2">Fecha de ingreso</label>
+                                    <label for="date" class="ms-2">Fecha de creación</label>
                                 </div>
-                                <div class="col-md-6 form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="Nombre">
-                                    <label for="floatingInput" class="ms-2">Primer nombre*</label>
-                                </div>
-                                <div class="col-md-6 form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput" class="ms-2">Segundo nombre*</label>
-                                </div>
-                                <div class="col-md-6 form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput" class="ms-2">Primer apellido*</label>
-                                </div>
-                                <div class="col-md-6 form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput" class="ms-2">Segundo apellido*</label>
+                                <div class="container">
+
+                                    <!-- Datos paciente -->
+                                    <fieldset class="row border rounded-3 mb-3">
+                                        <legend class="text-center"> Datos del paciente</legend>
+                                        <div class="form-floating mb-3 col-md-6">
+                                            <select class="form-select" id="floatingSelect"
+                                                aria-label="Floating label select example">
+                                                <option selected>-Seleccionar-</option>
+                                                <option value="CC">Cédula de Ciudadanía</option>
+                                                <option value="TI">Tarjeta de Identidad</option>
+                                                <option value="CE">Cédula de Extranjería</option>
+                                                <option value="PA">Pasaporte</option>
+                                            </select>
+                                            <label for="floatingSelect" class="ms-2">Tipo de documento</label>
+                                        </div>
+                                        <div class="col-md-6 form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingInput"
+                                                placeholder="name@example.com">
+                                            <label for="floatingInput" class="ms-2">Número de documento</label>
+                                        </div>
+                                        <div class="col-md-6 form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingInput"
+                                                placeholder="Nombre">
+                                            <label for="floatingInput" class="ms-2">Nombre</label>
+                                        </div>
+                                        <div class="form-floating mb-3 col-md-6">
+                                            <select class="form-select" id="floatingSelect"
+                                                aria-label="Floating label select example">
+                                                <option selected>-Seleccionar-</option>
+                                                <option value="Masculino">Masculino</option>
+                                                <option value="Femenino">Femenino</option>
+                                                <option value="Otro">Otro</option>
+                                            </select>
+                                            <label for="floatingSelect" class="ms-2">Sexo*</label>
+                                        </div>
+                                        <div class="col-md-6 form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingInput"
+                                                placeholder="name@example.com">
+                                            <label for="floatingInput" class="ms-2">Edad</label>
+                                        </div>
+                                        <div class="col-md-6 form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingInput"
+                                                placeholder="name@example.com">
+                                            <label for="floatingInput" class="ms-2">Dirección donde reside*</label>
+                                        </div>
+                                    </fieldset>
+                                    <!-- Datos medicos -->
+                                    <fieldset class="row border rounded-3 mb-3">
+                                        <legend class="text-center">Datos del Médico</legend>
+                                        <div class="col-md-6 form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingInput"
+                                                placeholder="name@example.com">
+                                            <label for="floatingInput" class="ms-2">Nombre del médico</label>
+                                        </div>
+                                        <div class="col-md-6 form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingInput"
+                                                placeholder="name@example.com">
+                                            <label for="floatingInput" class="ms-2">Número de licencia</label>
+                                        </div>
+
+                                        <div class="form-floating mb-3 col-md-6">
+                                            <select class="form-select" id="floatingSelect"
+                                                aria-label="Floating label select example">
+                                                <option selected>-Seleccionar-</option>
+                                                <option value="Cardiología">Cardiología</option>
+                                                <option value="Dermatología">Dermatología</option>
+                                                <option value="Ginecología">Ginecología</option>
+                                                <option value="Pediatría">Pediatría</option>
+                                                <option value="Psiquiatría">Psiquiatría</option>
+                                                <option value="Oftalmología">Oftalmología</option>
+                                                <option value="Neurología">Neurología</option>
+                                                <option value="Traumatología">Traumatología</option>
+                                            </select>
+                                            <label for="floatingSelect" class="ms-2">Especialidad</label>
+                                        </div>
+                                        <div class="col-md-6 form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingInput"
+                                                placeholder="name@example.com">
+                                            <label for="floatingInput" class="ms-2">Contacto</label>
+                                        </div>
+                                    </fieldset>
+                                    <!-- Datos orden -->
+                                    <fieldset class="row border rounded-3 mb-3">
+                                        <legend class="text-center">Datos de la Orden</legend>
+                                        <div class="form-floating mb-3">
+                                            <input type="date" class="form-control text-end" id="date">
+                                            <label for="date" class="ms-2">Fecha de la orden</label>
+                                        </div>
+
+                                        
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" placeholder="Leave a comment here"
+                                                id="floatingTextarea" style="height: 150px;"></textarea>
+                                            <label for="floatingTextarea" class="ms-2">Medicamentos</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" placeholder="Leave a comment here"
+                                                id="floatingTextarea" style="height: 150px;"></textarea>
+                                            <label for="floatingTextarea" class="ms-2">Dosis e instrucciones</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" placeholder="Leave a comment here"
+                                                id="floatingTextarea" style="height: 150px;"></textarea>
+                                            <label for="floatingTextarea" class="ms-2">Notas Adicionales</label>
+                                        </div>
+                                    </fieldset>
                                 </div>
 
-                                <div class="form-floating mb-3 col-md-6">
-                                    <select class="form-select" id="floatingSelect"
-                                        aria-label="Floating label select example">
-                                        <option selected>-Seleccionar-</option>
-                                        <option value="CC">Cédula de Ciudadanía</option>
-                                        <option value="TI">Tarjeta de Identidad</option>
-                                        <option value="CE">Cédula de Extranjería</option>
-                                        <option value="PA">Pasaporte</option>
-                                    </select>
-                                    <label for="floatingSelect" class="ms-2">Tipo de documento</label>
-                                </div>
-
-                                <div class="col-md-6 form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput" class="ms-2">Número de documento*</label>
-                                </div>
-                                <div class="col-md-6 form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput" class="ms-2">Número de de Registro Médico*</label>
-                                </div>
-
-                                <div class="form-floating mb-3 col-md-6">
-                                    <select class="form-select" id="floatingSelect"
-                                        aria-label="Floating label select example">
-                                        <option selected>-Seleccionar-</option>
-                                        <option value="Cardiología">Cardiología</option>
-                                        <option value="Dermatología">Dermatología</option>
-                                        <option value="Ginecología">Ginecología</option>
-                                        <option value="Pediatría">Pediatría</option>
-                                        <option value="Psiquiatría">Psiquiatría</option>
-                                        <option value="Oftalmología">Oftalmología</option>
-                                        <option value="Neurología">Neurología</option>
-                                        <option value="Traumatología">Traumatología</option>
-                                    </select>
-                                    <label for="floatingSelect" class="ms-2">Especialidad</label>
-                                </div>
-
-                                <div class="form-floating mb-3 col-md-6">
-                                    <select class="form-select" id="floatingSelect"
-                                        aria-label="Floating label select example">
-                                        <option selected>-Seleccionar-</option>
-                                        <option value="Antioquia">Antioquia</option>
-                                        <option value="Bogotá">Bogotá</option>
-                                        <option value="Cundinamarca">Cundinamarca</option>
-                                        <option value="Sucre">Municipio</option>
-                                    </select>
-                                    <label for="floatingSelect" class="ms-2">Departamento donde reside</label>
-                                </div>
-
-                                <div class="col-md-6 form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput" class="ms-2">Dirección donde reside*</label>
-                                </div>
-                                <div class="col-md-6 form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput" class="ms-2">Teléfono*</label>
-                                </div>
-                                <div class="col-md-6 form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput" class="ms-2">Celular*</label>
-                                </div>
-                                <div class="col-md-6 form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput" class="ms-2">Correo Electrónico*</label>
-                                </div>
-                                <div class="col-md-6 form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput" class="ms-2">Confirmar Correo Electrónico*</label>
-                                </div>
-
-                                <div class="form-floating mb-3 col-md-6">
-                                    <select class="form-select" id="floatingSelect"
-                                        aria-label="Floating label select example">
-                                        <option selected>-Seleccionar-</option>
-                                        <option value="Masculino">Masculino</option>
-                                        <option value="Femenino">Femenino</option>
-                                        <option value="Otro">Otro</option>
-                                    </select>
-                                    <label for="floatingSelect" class="ms-2">Sexo*</label>
-                                </div>
-
-                                <div class="form-floating mb-3 col-md-6">
-                                    <select class="form-select" id="floatingSelect"
-                                        aria-label="Floating label select example">
-                                        <option selected>-Seleccionar-</option>
-                                        <option value="A+">A+</option>
-                                        <option value="A-">A-</option>
-                                        <option value="B+">B+</option>
-                                        <option value="B-">B-</option>
-                                        <option value="AB+">AB+</option>
-                                        <option value="AB-">AB-</option>
-                                        <option value="O+">O+</option>
-                                        <option value="O-">O-</option>
-                                    </select>
-                                    <label for="floatingSelect" class="ms-2">Grupo Sanguíneo*</label>
-                                </div>
-
-                                <div class="col-md-12 mb-3">
-
-                                    <label for="documento-identidad" class="form-label">Adjuntar documento de
-                                        identidad*</label>
-                                    <input class="form-control" type="file" id="documento-identidad"
-                                        accept=".txt,.rtf,.pdf,.doc,.docx,.odt,.ppt,.pptx,.odp,.xls,.xlsx,.ods,.jpg">
-                                    <div class="form-text">
-                                        Máximo 1 fichero, límite de 25 MB, tipos permitidos: txt, rtf, pdf, doc, docx,
-                                        odt,
-                                        ppt, pptx, odp, xls, xlsx, ods, jpg.
-                                    </div>
-                                </div>
-
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a comment here"
-                                        id="floatingTextarea" style="height: 150px;"></textarea>
-                                    <label for="floatingTextarea" class="ms-2">Comments</label>
-                                </div>
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="autorizacion-datos" required="">
-                                    <label class="form-check-label" for="autorizacion-datos">Acepto el tratamiento y la
-                                        Política de Protección de Datos
-                                        Personales Servicios</label>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Registrar</button>
+                                <button type="submit" class="btn btn-primary w-25 p-2">Enviar</button>
                             </form>
 
                         </div>
